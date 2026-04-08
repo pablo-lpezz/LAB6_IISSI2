@@ -13,86 +13,108 @@ import { showMessage } from 'react-native-flash-message'
 import { ErrorMessage, Formik } from 'formik'
 import TextError from '../../components/TextError'
 import ImagePicker from '../../components/ImagePicker'
+import { Formik } from 'formik'
 
 export default function CreateRestaurantScreen({ navigation }) {
+      const initialRestaurantValues = {
+    name: null,
+    description: null,
+    address: null,
+    postalCode: null,
+    url: null,
+    shippingCosts: null,
+    email: null,
+    phone: null,
+    restaurantCategoryId: null
+  }
   return (
-    <ScrollView>
-      <View style={{ alignItems: 'center' }}>
-        <View style={{ width: '60%' }}>
-        <InputItem
-          name='sampleInput'
-          label='Sample input'
-        />
-        <InputItem
-          name='sampleInput'
-          label='Sample input'
-        />
-        <InputItem
-          name='sampleInput'
-          label='Sample input'
-        />
-        <InputItem
-          name='sampleInput'
-          label='Sample input'
-        />
-        <InputItem
-          name='sampleInput'
-          label='Sample input'
-        />
-        <InputItem
-          name='sampleInput'
-          label='Sample input'
-        />
-        <InputItem
-          name='sampleInput'
-          label='Sample input'
-        />
-        <InputItem
-          name='sampleInput'
-          label='Sample input'
-        />
-        <InputItem
-          name='sampleInput'
-          label='Sample input'
-        />
-        <InputItem
-          name='sampleInput'
-          label='Sample input'
-        />
-        <InputItem
-          name='sampleInput'
-          label='Sample input'
-        />
-        <InputItem
-          name='sampleInput'
-          label='Sample input'
-        />
-        <InputItem
-          name='sampleInput'
-          label='Sample input'
-        />
-        <InputItem
-          name='sampleInput'
-          label='Sample input'
-        />
-        <Pressable
-          onPress={() => console.log('Button pressed')
-          }
-          style={({ pressed }) => [
-            {
-              backgroundColor: pressed
-                ? GlobalStyles.brandPrimaryTap
-                : GlobalStyles.brandPrimary
-            },
-            styles.button
-          ]}>
-          <TextRegular textStyle={styles.text}>
-            Create restaurant
-          </TextRegular>
-        </Pressable>
-        </View>
-      </View>
-    </ScrollView>
+    <Formik
+      initialValues={initialRestaurantValues}
+    >
+      {({ setFieldValue, values }) => (
+        <ScrollView>
+          <View style={{ alignItems: 'center' }}>
+            <View style={{ width: '60%' }}>
+              <InputItem
+                name='name'
+                label='Name:'
+              />
+              <InputItem
+                name='sampleInput'
+                label='Sample input'
+              />
+              <InputItem
+                name='sampleInput'
+                label='Sample input'
+              />
+              <InputItem
+                name='sampleInput'
+                label='Sample input'
+              />
+              <InputItem
+                name='sampleInput'
+                label='Sample input'
+              />
+              <InputItem
+                name='sampleInput'
+                label='Sample input'
+              />
+              <InputItem
+                name='sampleInput'
+                label='Sample input'
+              />
+              <InputItem
+                name='sampleInput'
+                label='Sample input'
+              />
+              <InputItem
+                name='sampleInput'
+                label='Sample input'
+              />
+              <InputItem
+                name='sampleInput'
+                label='Sample input'
+              />
+              <InputItem
+                name='sampleInput'
+                label='Sample input'
+              />
+              <InputItem
+                name='sampleInput'
+                label='Sample input'
+              />
+              <InputItem
+                name='sampleInput'
+                label='Sample input'
+              />
+              <InputItem
+                name='sampleInput'
+                label='Sample input'
+              />
+              <InputItem
+                name='sampleInput'
+                label='Sample input'
+              />
+              <Pressable
+                onPress={() => console.log('Button pressed')
+                }
+                style={({ pressed }) => [
+                  {
+                    backgroundColor: pressed
+                      ? GlobalStyles.brandPrimaryTap
+                      : GlobalStyles.brandPrimary
+                  },
+                  styles.button
+                ]}>
+                <TextRegular textStyle={styles.text}>
+                  Create restaurant
+                </TextRegular>
+              </Pressable>
+            </View>
+          </View>
+        </ScrollView>
+      )}
+    </Formik>
   )
 }
 
