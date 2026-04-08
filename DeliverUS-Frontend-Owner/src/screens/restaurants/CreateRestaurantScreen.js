@@ -62,7 +62,7 @@ export default function CreateRestaurantScreen({ navigation }) {
           styles.button
         ]}>
         <TextRegular textStyle={styles.text}>
-          Adrian es bobo
+          Create restaurant
         </TextRegular>
       </Pressable>
       </View>
