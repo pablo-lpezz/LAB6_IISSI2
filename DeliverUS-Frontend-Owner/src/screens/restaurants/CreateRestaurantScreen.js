@@ -51,6 +51,30 @@ export default function CreateRestaurantScreen({ navigation }) {
           name='sampleInput'
           label='Sample input'
         />
+        <InputItem
+          name='sampleInput'
+          label='Sample input'
+        />
+        <InputItem
+          name='sampleInput'
+          label='Sample input'
+        />
+        <InputItem
+          name='sampleInput'
+          label='Sample input'
+        />
+        <InputItem
+          name='sampleInput'
+          label='Sample input'
+        />
+        <InputItem
+          name='sampleInput'
+          label='Sample input'
+        />
+        <InputItem
+          name='sampleInput'
+          label='Sample input'
+        />
         <Pressable
           onPress={() => console.log('Button pressed')
           }
