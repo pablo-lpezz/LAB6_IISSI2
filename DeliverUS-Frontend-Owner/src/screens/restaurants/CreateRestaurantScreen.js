@@ -35,6 +35,18 @@ export default function CreateRestaurantScreen({ navigation }) {
         <ScrollView>
           <View style={{ alignItems: 'center' }}>
             <View style={{ width: '60%' }}>
+            <ImagePicker
+                label="Logo:"
+                image={values.logo}
+                defaultImage={restaurantLogo}
+                onImagePicked={result => setFieldValue('logo', result)}
+                />
+                <ImagePicker
+                label="Hero Image:"
+                image={values.heroImage}
+                defaultImage={restaurantBackground}
+                onImagePicked={result => setFieldValue('heroImage', result)}
+                />
               <InputItem
                 name='name'
                 label='Name:'
@@ -79,18 +91,6 @@ export default function CreateRestaurantScreen({ navigation }) {
                   },
                   styles.button
                 ]}>
-                <ImagePicker
-                label="Logo:"
-                image={values.logo}
-                defaultImage={restaurantLogo}
-                onImagePicked={result => setFieldValue('logo', result)}
-                />
-                <ImagePicker
-                label="Hero Image:"
-                image={values.heroImage}
-                defaultImage={restaurantBackground}
-                onImagePicked={result => setFieldValue('heroImage', result)}
-                />
                 <TextRegular textStyle={styles.text}>
                   Create restaurant
                 </TextRegular>
