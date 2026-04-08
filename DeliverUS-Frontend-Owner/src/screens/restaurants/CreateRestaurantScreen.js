@@ -13,7 +13,7 @@ import { showMessage } from 'react-native-flash-message'
 import { ErrorMessage, Formik } from 'formik'
 import TextError from '../../components/TextError'
 import ImagePicker from '../../components/ImagePicker'
-import { Formik } from 'formik'
+
 
 export default function CreateRestaurantScreen({ navigation }) {
       const initialRestaurantValues = {
@@ -67,7 +67,7 @@ export default function CreateRestaurantScreen({ navigation }) {
                 name='phone'
                 label='Phone:'
               />
-              
+
               <Pressable
                 onPress={() => console.log('Button pressed')
                 }
