@@ -17,7 +17,7 @@ import ImagePicker from '../../components/ImagePicker'
 export default function CreateRestaurantScreen({ navigation }) {
   return (
     <View style={{ alignItems: 'center' }}>
-      <View style={{ width: '100%' }}>
+      <View style={{ width: '60%' }}>
       <InputItem
         name='sampleInput'
         label='Sample input'
