@@ -16,7 +16,7 @@ import ImagePicker from '../../components/ImagePicker'
 
 export default function CreateRestaurantScreen({ navigation }) {
   return (
-    
+    <ScrollView>
       <View style={{ alignItems: 'center' }}>
         <View style={{ width: '60%' }}>
         <InputItem
@@ -92,7 +92,7 @@ export default function CreateRestaurantScreen({ navigation }) {
         </Pressable>
         </View>
       </View>
-    
+    </ScrollView>
   )
 }
 
