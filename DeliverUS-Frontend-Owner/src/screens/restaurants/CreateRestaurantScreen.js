@@ -40,61 +40,34 @@ export default function CreateRestaurantScreen({ navigation }) {
                 label='Name:'
               />
               <InputItem
-                name='sampleInput'
-                label='Sample input'
+                name='description'
+                label='Description:'
               />
               <InputItem
-                name='sampleInput'
-                label='Sample input'
+                name='address'
+                label='Address:'
               />
               <InputItem
-                name='sampleInput'
-                label='Sample input'
+                name='postalCode'
+                label='Postal Code:'
               />
               <InputItem
-                name='sampleInput'
-                label='Sample input'
+                name='url'
+                label='URL:'
               />
               <InputItem
-                name='sampleInput'
-                label='Sample input'
+                name='shippingCosts'
+                label='Shipping Costs:'
               />
               <InputItem
-                name='sampleInput'
-                label='Sample input'
+                name='email'
+                label='Email:'
               />
               <InputItem
-                name='sampleInput'
-                label='Sample input'
+                name='phone'
+                label='Phone:'
               />
-              <InputItem
-                name='sampleInput'
-                label='Sample input'
-              />
-              <InputItem
-                name='sampleInput'
-                label='Sample input'
-              />
-              <InputItem
-                name='sampleInput'
-                label='Sample input'
-              />
-              <InputItem
-                name='sampleInput'
-                label='Sample input'
-              />
-              <InputItem
-                name='sampleInput'
-                label='Sample input'
-              />
-              <InputItem
-                name='sampleInput'
-                label='Sample input'
-              />
-              <InputItem
-                name='sampleInput'
-                label='Sample input'
-              />
+              
               <Pressable
                 onPress={() => console.log('Button pressed')
                 }
